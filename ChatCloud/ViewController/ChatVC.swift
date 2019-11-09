@@ -26,14 +26,26 @@ class ChatVC: UIViewController {
     @IBAction func sendButtonAction(_ sender: UIButton) {
     }
 
-    /* Description: Preparing the UI
-     - Parameter keys: No Parameter
+    /** Description: Preparing the UI
+     - Parameters: No Parameter
      - Returns: No Parameter
      */
     func prepareUI() {
         chatTxtView.delegate = self
-
+        chatTxtView.text = "Type here..."
+        chatTxtView.textColor = .gray
+        tableView.tableFooterView = UIView()
+        sendButton.layer.cornerRadius = sendButton.frame.width/2
     }
+    
+    /** Description: Preparing the UI
+     - Parameter Keys: No Parameter
+     - Returns: No Parameter
+     */
+    func prepareChatTxtView() {
+        chatTxtView.layer.cornerRadius = 8
+    }
+    
 }
 
 extension ChatVC: UITableViewDelegate, UITableViewDataSource {
@@ -52,7 +64,8 @@ extension ChatVC: UITableViewDelegate, UITableViewDataSource {
 
 extension ChatVC: UITextViewDelegate {
     func textViewDidBeginEditing(_ textView: UITextView) {
-
+        chatTxtView.text = ""
+        chatTxtView.textColor = .black
     }
 
     func textViewDidEndEditing(_ textView: UITextView) {

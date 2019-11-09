@@ -26,23 +26,27 @@
                             <constraint firstAttribute="width" constant="50" id="E9B-jd-TZC"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lfg-KO-yiD">
-                        <rect key="frame" x="75" y="15" width="230" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lfg-KO-yiD">
+                        <rect key="frame" x="75" y="29.5" width="230" height="20.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="Lfg-KO-yiD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="HKS-9H-xak"/>
                     <constraint firstItem="r2O-Dh-lhH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="ICa-pr-n5g"/>
                     <constraint firstItem="r2O-Dh-lhH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="M81-nH-MFk"/>
                     <constraint firstAttribute="bottom" secondItem="r2O-Dh-lhH" secondAttribute="bottom" constant="15" id="VOg-xU-zsB"/>
+                    <constraint firstItem="Lfg-KO-yiD" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="cua-oe-Noz"/>
                     <constraint firstItem="Lfg-KO-yiD" firstAttribute="leading" secondItem="r2O-Dh-lhH" secondAttribute="trailing" constant="15" id="tnx-Ri-tH1"/>
                     <constraint firstAttribute="trailing" secondItem="Lfg-KO-yiD" secondAttribute="trailing" constant="15" id="ueO-pj-6zT"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgView" destination="r2O-Dh-lhH" id="fi7-QA-dv0"/>
+                <outlet property="lblView" destination="Lfg-KO-yiD" id="kAC-n4-Vkg"/>
+            </connections>
             <point key="canvasLocation" x="69.565217391304358" y="125.89285714285714"/>
         </tableViewCell>
     </objects>
