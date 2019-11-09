@@ -47,26 +47,72 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="qu6-3V-fKf">
-                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qu6-3V-fKf" id="rre-ws-x1e">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="D0I-2y-YFd" id="pyG-NI-4Mz"/>
                             <outlet property="delegate" destination="D0I-2y-YFd" id="JEf-Ih-6dg"/>
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Dashboard" id="ahi-RH-0Oo"/>
+                    <connections>
+                        <segue destination="FxR-g5-wfl" kind="show" identifier="dashboardToChatVC" id="QsH-bt-6VX"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7zU-eI-yDw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2046" y="122"/>
+        </scene>
+        <!--ChatVC-->
+        <scene sceneID="sVb-Bp-iGO">
+            <objects>
+                <viewController id="FxR-g5-wfl" customClass="ChatVC" customModule="ChatCloud" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NdE-KE-GFE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sqt-yq-gAI">
+                                <rect key="frame" x="0.0" y="88" width="414" height="715"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lis-Ns-ORO">
+                                <rect key="frame" x="353" y="832.5" width="46" height="29.5"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="sendButtonAction:" destination="FxR-g5-wfl" eventType="touchUpInside" id="M4X-Aw-PaF"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="7hj-D4-Q7I">
+                                <rect key="frame" x="15" y="818" width="328" height="59"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="7hj-D4-Q7I" firstAttribute="top" secondItem="sqt-yq-gAI" secondAttribute="bottom" constant="15" id="Hz5-9c-pIE"/>
+                            <constraint firstItem="7hj-D4-Q7I" firstAttribute="bottom" secondItem="dqf-ZM-cfA" secondAttribute="bottom" constant="15" id="JEy-fW-hSu"/>
+                            <constraint firstItem="Lis-Ns-ORO" firstAttribute="leading" secondItem="7hj-D4-Q7I" secondAttribute="trailing" constant="10" id="UGp-an-skd"/>
+                            <constraint firstItem="dqf-ZM-cfA" firstAttribute="trailing" secondItem="sqt-yq-gAI" secondAttribute="trailing" id="UeC-wp-Sdf"/>
+                            <constraint firstItem="dqf-ZM-cfA" firstAttribute="trailing" secondItem="Lis-Ns-ORO" secondAttribute="trailing" constant="15" id="cXt-fc-GXM"/>
+                            <constraint firstItem="sqt-yq-gAI" firstAttribute="leading" secondItem="dqf-ZM-cfA" secondAttribute="leading" id="hef-7m-TPA"/>
+                            <constraint firstItem="7hj-D4-Q7I" firstAttribute="leading" secondItem="dqf-ZM-cfA" secondAttribute="leading" constant="15" id="jMk-F9-tav"/>
+                            <constraint firstItem="dqf-ZM-cfA" firstAttribute="bottom" secondItem="Lis-Ns-ORO" secondAttribute="bottom" id="mgx-dY-fJz"/>
+                            <constraint firstItem="Lis-Ns-ORO" firstAttribute="height" secondItem="NdE-KE-GFE" secondAttribute="height" multiplier="0.033" id="px6-VF-0Vy"/>
+                            <constraint firstItem="sqt-yq-gAI" firstAttribute="top" secondItem="dqf-ZM-cfA" secondAttribute="top" id="soZ-Ba-GzU"/>
+                            <constraint firstItem="7hj-D4-Q7I" firstAttribute="height" secondItem="NdE-KE-GFE" secondAttribute="height" multiplier="0.066" id="wMv-Bh-oEg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dqf-ZM-cfA"/>
+                    </view>
+                    <connections>
+                        <outlet property="chatTxtView" destination="7hj-D4-Q7I" id="Yj4-q4-ApV"/>
+                        <outlet property="sendButton" destination="Lis-Ns-ORO" id="Q2i-y8-XgL"/>
+                        <outlet property="tableView" destination="sqt-yq-gAI" id="o8X-pB-dDY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mCJ-9t-CVy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2908.6956521739135" y="121.875"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="6t1-Y8-0z0">

@@ -16,7 +16,12 @@
 		9D1B79D823770E0900BCF633 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1B79D723770E0900BCF633 /* LoginVC.swift */; };
 		9D1B79DA23770F0A00BCF633 /* DashboardTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1B79D923770F0A00BCF633 /* DashboardTableVC.swift */; };
 		9D1B79DC23770F2300BCF633 /* BaseTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1B79DB23770F2300BCF633 /* BaseTableVC.swift */; };
-		9D1B79E023770FD400BCF633 /* ChatTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1B79DF23770FD400BCF633 /* ChatTableVC.swift */; };
+		9D1B79E423771D0A00BCF633 /* ChatViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1B79E223771D0A00BCF633 /* ChatViewCell.swift */; };
+		9D1B79E523771D0A00BCF633 /* ChatViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D1B79E323771D0A00BCF633 /* ChatViewCell.xib */; };
+		9D1B79E7237722C800BCF633 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1B79E6237722C800BCF633 /* ChatViewModel.swift */; };
+		9D1B79EB2377231300BCF633 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1B79EA2377231300BCF633 /* ChatVC.swift */; };
+		9D1B79ED237723D500BCF633 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1B79EC237723D500BCF633 /* DashboardViewModel.swift */; };
+		9D1B79EF2377240500BCF633 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1B79EE2377240500BCF633 /* AppConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +38,12 @@
 		9D1B79D723770E0900BCF633 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		9D1B79D923770F0A00BCF633 /* DashboardTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTableVC.swift; sourceTree = "<group>"; };
 		9D1B79DB23770F2300BCF633 /* BaseTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableVC.swift; sourceTree = "<group>"; };
-		9D1B79DF23770FD400BCF633 /* ChatTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableVC.swift; sourceTree = "<group>"; };
+		9D1B79E223771D0A00BCF633 /* ChatViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewCell.swift; sourceTree = "<group>"; };
+		9D1B79E323771D0A00BCF633 /* ChatViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatViewCell.xib; sourceTree = "<group>"; };
+		9D1B79E6237722C800BCF633 /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		9D1B79EA2377231300BCF633 /* ChatVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
+		9D1B79EC237723D500BCF633 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		9D1B79EE2377240500BCF633 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +96,7 @@
 				9D1B79D723770E0900BCF633 /* LoginVC.swift */,
 				9D1B79DB23770F2300BCF633 /* BaseTableVC.swift */,
 				9D1B79D923770F0A00BCF633 /* DashboardTableVC.swift */,
-				9D1B79DF23770FD400BCF633 /* ChatTableVC.swift */,
+				9D1B79EA2377231300BCF633 /* ChatVC.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -103,6 +113,8 @@
 		9D1B79CF23770D2E00BCF633 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				9D1B79E6237722C800BCF633 /* ChatViewModel.swift */,
+				9D1B79EC237723D500BCF633 /* DashboardViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -111,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				9D1B79B823770C8F00BCF633 /* AppDelegate.swift */,
+				9D1B79EE2377240500BCF633 /* AppConstants.swift */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -127,6 +140,8 @@
 		9D1B79D323770D9100BCF633 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				9D1B79E223771D0A00BCF633 /* ChatViewCell.swift */,
+				9D1B79E323771D0A00BCF633 /* ChatViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -232,6 +247,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D1B79E523771D0A00BCF633 /* ChatViewCell.xib in Resources */,
 				9D1B79C623770C9000BCF633 /* LaunchScreen.storyboard in Resources */,
 				9D1B79C323770C9000BCF633 /* Assets.xcassets in Resources */,
 				9D1B79BE23770C8F00BCF633 /* Main.storyboard in Resources */,
@@ -288,12 +304,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D1B79EB2377231300BCF633 /* ChatVC.swift in Sources */,
 				9D1B79B923770C8F00BCF633 /* AppDelegate.swift in Sources */,
-				9D1B79E023770FD400BCF633 /* ChatTableVC.swift in Sources */,
+				9D1B79E7237722C800BCF633 /* ChatViewModel.swift in Sources */,
+				9D1B79ED237723D500BCF633 /* DashboardViewModel.swift in Sources */,
 				9D1B79C123770C8F00BCF633 /* ChatCloud.xcdatamodeld in Sources */,
 				9D1B79DA23770F0A00BCF633 /* DashboardTableVC.swift in Sources */,
+				9D1B79E423771D0A00BCF633 /* ChatViewCell.swift in Sources */,
 				9D1B79DC23770F2300BCF633 /* BaseTableVC.swift in Sources */,
 				9D1B79D823770E0900BCF633 /* LoginVC.swift in Sources */,
+				9D1B79EF2377240500BCF633 /* AppConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -15,7 +15,6 @@ class LoginVC: UIViewController {
     }
 
     @IBAction func loginButtonAction(_ sender: UIButton) {
-        performSegue(withIdentifier: "loginToDashboard", sender: self)
+        performSegue(withIdentifier: loginSegue, sender: self)
     }
-    
 }
