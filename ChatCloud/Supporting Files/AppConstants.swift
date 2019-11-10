@@ -11,3 +11,5 @@ import Foundation
 // Segue Constants
 let dashboardSegue = "dashboardToChatVC"
 let loginSegue = "loginToDashboard"
+let registerSegue = "loginToRegister"
+let chatSegue = "dashboardToChatVC"

@@ -17,4 +17,8 @@ class LoginVC: UIViewController {
     @IBAction func loginButtonAction(_ sender: UIButton) {
         performSegue(withIdentifier: loginSegue, sender: self)
     }
+    
+    @IBAction func registerButtonAction(_ sender: UIButton) {
+        performSegue(withIdentifier: registerSegue, sender: self)
+    }
 }

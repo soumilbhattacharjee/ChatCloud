@@ -15,11 +15,13 @@ class ChatVC: UIViewController {
     @IBOutlet weak var chatTxtView: UITextView!
 
     override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         prepareUI()
         // Show saved data in chat box
     }
 
     override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
         // Store Temp Text
     }
 

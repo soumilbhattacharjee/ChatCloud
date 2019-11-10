@@ -14,6 +14,13 @@ class DashboardTableVC: UITableViewController {
         super.viewDidLoad()
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        prepareUI()
+    }
+    func prepareUI() {
+        tableView.tableFooterView = UIView()
+    }
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

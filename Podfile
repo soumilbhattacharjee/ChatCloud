@@ -7,4 +7,7 @@ target 'ChatCloud' do
   
   # Pods for ChatCloud
   pod 'SwiftLint'
+  pod 'Firebase'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Database' 
 end

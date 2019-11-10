@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -22,6 +22,12 @@
 		9D1B79EB2377231300BCF633 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1B79EA2377231300BCF633 /* ChatVC.swift */; };
 		9D1B79ED237723D500BCF633 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1B79EC237723D500BCF633 /* DashboardViewModel.swift */; };
 		9D1B79EF2377240500BCF633 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1B79EE2377240500BCF633 /* AppConstants.swift */; };
+		9D9DB6222377AE8D001E6465 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D9DB6212377AE8D001E6465 /* GoogleService-Info.plist */; };
+		9DF832BE2377BCF600D637E4 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF832BD2377BCF600D637E4 /* RegisterVC.swift */; };
+		9DF832C02377C0FE00D637E4 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF832BF2377C0FE00D637E4 /* RegisterViewModel.swift */; };
+		9DF832C22377C11300D637E4 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF832C12377C11300D637E4 /* FirebaseManager.swift */; };
+		9DF832C42377CFD500D637E4 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF832C32377CFD500D637E4 /* Utility.swift */; };
+		9DF832C62377D41D00D637E4 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF832C52377D41D00D637E4 /* Protocols.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +50,12 @@
 		9D1B79EA2377231300BCF633 /* ChatVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		9D1B79EC237723D500BCF633 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
 		9D1B79EE2377240500BCF633 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		9D9DB6212377AE8D001E6465 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9DF832BD2377BCF600D637E4 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		9DF832BF2377C0FE00D637E4 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		9DF832C12377C11300D637E4 /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
+		9DF832C32377CFD500D637E4 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		9DF832C52377D41D00D637E4 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +98,7 @@
 				9D1B79D023770D4000BCF633 /* Supporting Files */,
 				9D1B79C223770C9000BCF633 /* Assets.xcassets */,
 				9D1B79C723770C9000BCF633 /* Info.plist */,
+				9D9DB6212377AE8D001E6465 /* GoogleService-Info.plist */,
 			);
 			path = ChatCloud;
 			sourceTree = "<group>";
@@ -97,6 +110,7 @@
 				9D1B79DB23770F2300BCF633 /* BaseTableVC.swift */,
 				9D1B79D923770F0A00BCF633 /* DashboardTableVC.swift */,
 				9D1B79EA2377231300BCF633 /* ChatVC.swift */,
+				9DF832BD2377BCF600D637E4 /* RegisterVC.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -104,6 +118,7 @@
 		9D1B79CE23770D2300BCF633 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				9DF832BC2377BC3300D637E4 /* Firebase */,
 				9D1B79D623770DE800BCF633 /* Data Model */,
 				9D1B79D523770DD000BCF633 /* Core Data */,
 			);
@@ -115,6 +130,7 @@
 			children = (
 				9D1B79E6237722C800BCF633 /* ChatViewModel.swift */,
 				9D1B79EC237723D500BCF633 /* DashboardViewModel.swift */,
+				9DF832BF2377C0FE00D637E4 /* RegisterViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -124,6 +140,8 @@
 			children = (
 				9D1B79B823770C8F00BCF633 /* AppDelegate.swift */,
 				9D1B79EE2377240500BCF633 /* AppConstants.swift */,
+				9DF832C32377CFD500D637E4 /* Utility.swift */,
+				9DF832C52377D41D00D637E4 /* Protocols.swift */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -170,6 +188,14 @@
 			path = "Data Model";
 			sourceTree = "<group>";
 		};
+		9DF832BC2377BC3300D637E4 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				9DF832C12377C11300D637E4 /* FirebaseManager.swift */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
 		B234C2665F713B986E72EFE4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -199,6 +225,7 @@
 				9D1B79B223770C8F00BCF633 /* Frameworks */,
 				9D1B79B323770C8F00BCF633 /* Resources */,
 				9D1B79E12377119E00BCF633 /* Swiftlint */,
+				B1DD46376BD42800D1ED84D4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -249,6 +276,7 @@
 			files = (
 				9D1B79E523771D0A00BCF633 /* ChatViewCell.xib in Resources */,
 				9D1B79C623770C9000BCF633 /* LaunchScreen.storyboard in Resources */,
+				9D9DB6222377AE8D001E6465 /* GoogleService-Info.plist in Resources */,
 				9D1B79C323770C9000BCF633 /* Assets.xcassets in Resources */,
 				9D1B79BE23770C8F00BCF633 /* Main.storyboard in Resources */,
 			);
@@ -297,6 +325,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		B1DD46376BD42800D1ED84D4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChatCloud/Pods-ChatCloud-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChatCloud/Pods-ChatCloud-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChatCloud/Pods-ChatCloud-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -304,16 +349,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DF832C62377D41D00D637E4 /* Protocols.swift in Sources */,
+				9DF832C42377CFD500D637E4 /* Utility.swift in Sources */,
 				9D1B79EB2377231300BCF633 /* ChatVC.swift in Sources */,
 				9D1B79B923770C8F00BCF633 /* AppDelegate.swift in Sources */,
 				9D1B79E7237722C800BCF633 /* ChatViewModel.swift in Sources */,
 				9D1B79ED237723D500BCF633 /* DashboardViewModel.swift in Sources */,
+				9DF832BE2377BCF600D637E4 /* RegisterVC.swift in Sources */,
 				9D1B79C123770C8F00BCF633 /* ChatCloud.xcdatamodeld in Sources */,
 				9D1B79DA23770F0A00BCF633 /* DashboardTableVC.swift in Sources */,
+				9DF832C02377C0FE00D637E4 /* RegisterViewModel.swift in Sources */,
 				9D1B79E423771D0A00BCF633 /* ChatViewCell.swift in Sources */,
 				9D1B79DC23770F2300BCF633 /* BaseTableVC.swift in Sources */,
 				9D1B79D823770E0900BCF633 /* LoginVC.swift in Sources */,
 				9D1B79EF2377240500BCF633 /* AppConstants.swift in Sources */,
+				9DF832C22377C11300D637E4 /* FirebaseManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
