@@ -11,7 +11,7 @@ import UIKit
 class RegisterVC: UIViewController {
     @IBOutlet weak var emailTxt: UITextField!
     @IBOutlet weak var passwordTxt: UITextField!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 

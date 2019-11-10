@@ -39,7 +39,7 @@ class ChatVC: UIViewController {
         tableView.tableFooterView = UIView()
         sendButton.layer.cornerRadius = sendButton.frame.width/2
     }
-    
+
     /** Description: Preparing the UI
      - Parameter Keys: No Parameter
      - Returns: No Parameter
@@ -47,7 +47,7 @@ class ChatVC: UIViewController {
     func prepareChatTxtView() {
         chatTxtView.layer.cornerRadius = 8
     }
-    
+
 }
 
 extension ChatVC: UITableViewDelegate, UITableViewDataSource {
