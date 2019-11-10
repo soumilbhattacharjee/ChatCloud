@@ -23,7 +23,12 @@ class FirebaseManager {
      - Returns: No Parameter
      */
     func createNewUser(with userId: String, and password: String) {
-        Auth.auth().createUser(withEmail: userId, password: password) { (_, _) in
+        Auth.auth().createUser(withEmail: userId, password: password) { (data, error) in
+            if let error = error {
+                print(error)
+            } else if let data = data {
+                print(data)
+            }
             print("createNewUser")
         }
     }

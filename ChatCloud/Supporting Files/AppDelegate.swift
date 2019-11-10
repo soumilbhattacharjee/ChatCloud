@@ -6,7 +6,6 @@
 //  Copyright © 2019 Soumil. All rights reserved.
 //
 
-import UIKit
 import CoreData
 import Firebase
 
